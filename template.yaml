@@ -64,6 +64,3 @@ Outputs:
 
   PrivateSubnets:
     Value: !Sub ${PrivateSubnetA},${PrivateSubnetB},${PrivateSubnetC}
-
-  SecurityGroup:
-    Value: !Ref SecurityGroup
