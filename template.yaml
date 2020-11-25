@@ -61,6 +61,12 @@ Resources:
 Outputs:
   VPC:
     Value: !Ref VPC
+    Export:
+      Name:
+        Ref: !Sub "${AWS::StackName}-VPC"
 
   PrivateSubnets:
     Value: !Sub ${PrivateSubnetA},${PrivateSubnetB},${PrivateSubnetC}
+    Export:
+      Name:
+        Ref: !Sub "${AWS::StackName}-Subnets"
